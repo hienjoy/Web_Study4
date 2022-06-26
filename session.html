@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>title</title>
+		<script>
+			function f1(){
+				if(typeof(Storage)!="undefined"){
+					sessionStorage.name=document.getElementById("name").value;
+				}
+				else{
+					alert("로컬 저장 지원 안됨");
+				}
+			}
+			function f2(){
+				if(typeof(Storage)!="undefined"){
+					if(sessionStorage.name){
+						document.getElementById("result").innerHTML=sessionStorage.name+"님 등록되었습니다.";
+					}
+					else{
+						document.getElementById("result").innerHTML="등록된 사용자 없습니다.";
+						}
+				}
+				else{
+					alert("로컬 저장 지원 안됨");
+				}
+			}
+			function f3(){
+				if(typeof(Storage)!="undefined"){
+					if(sessionStorage.name){
+						sessionStorage.removeItem("name");
+					}
+				}
+				else{
+					alert("로컬 저장 지원 안됨");
+				}
+			}
+		</script>
+	</head>
+	<body>
+			name:<input type="text" id="name">
+			<input type="button" value="사용자등록" onclick="f1()"><br>
+			<input type="button" value="사용자읽기" onclick="f2()"><br>
+			<input type="button" value="사용자삭제" onclick="f3()"><br>
+			<div id="result"></div>
+	</body>
+</html>

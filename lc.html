@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>title</title>
+		<script>
+			window.onload=function(){
+				if(typeof(Storage)!="undefined"){
+					if(localStorage.name){
+						document.getElementById("nameDiv").style.display="none";
+						document.getElementById("result").innerHTML=localStorage.name+"님 등록되었습니다.";
+						}}
+				else{
+					alert("로컬 저장 지원 안됨");
+					}
+			}
+			function f1(){
+				if(typeof(Storage)!="undefined"){
+					localStorage.name=document.getElementById("name").value;
+				}
+				else{
+					alert("로컬 저장 지원 안됨");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="nameDiv">
+			name:<input type="text" id="name">
+				<input type="button" value="사용자등록" onclick="f1()">
+		</div>
+		<div id="result"></div>
+	</body>
+</html>

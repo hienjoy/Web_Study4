@@ -1,0 +1,53 @@
+*{
+  font-family: 'Do Hyeon', sans-serif;
+  text-align:center;
+  font-weight:lighter;
+  }
+body{background-image: url("https://i.pinimg.com/originals/68/0b/d7/680bd741d6879d15735f4ab75b0de926.jpg");}
+h1{font-size:70px;
+   padding-top:50px;
+   letter-spacing:0.1em;}
+table{background-color:#FFEAEA;
+      margin:auto;}
+.choose {
+        font-size:50px;
+        letter-spacing:0.1em;
+}
+.choose input{
+        width:50px;
+        height:40px;
+}
+.choose button{
+        border-radius:20px;
+        width:100px;
+        height:50px;
+        font-size:25px;
+        letter-spacing:0.1em;
+}
+.put{
+        width:400px;
+        height:200px;
+        background-color:white;
+        margin:auto;
+        padding-top:60px;
+        letter-spacing:0.2em;
+}
+.pput{
+        color: #D941C5;
+        font-size:40px;}
+.cput{
+        font-size: 40px;
+        color: navy;}
+.save button{
+         width:80px;
+         height:60px;
+         font-size:15px;
+         border-radius:15px;
+         }i
+.save p{
+       font-size:40px;}
+.who{
+        font-size:30px;
+        letter-spacing:0.2em;
+        margin:auto;
+}
